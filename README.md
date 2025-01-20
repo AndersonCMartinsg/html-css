@@ -1,2 +1,2 @@
 # html-css
- estudo
+ Aprendendo a gerenciar o desenvolvimento de site
