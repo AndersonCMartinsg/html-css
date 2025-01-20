@@ -1,0 +1,222 @@
+@charset "utf8";
+/*
+#2EC9F0
+#2E4EF0
+#2D8CF0
+#2EF0D8
+#4B2EF0
+#7DB5F0
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: 'Android';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root {
+    --cor0: #2EC9F0;
+    --cor1: #2E4EF0;
+    --cor2: #2D8CF0;
+    --cor3: #2EF0D8;
+    --cor4: #4B2EF0;
+    --cor5: #7DB5F0;
+    --cor6: #364FF0;
+    --cor7: #F03545;
+
+    --fonte-pafrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neve', serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #b2cfef;
+    font-family: var(--fonte-pafrao);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor6), var(--cor4));
+    background-color: var(--cor1);
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40PX;
+}
+
+header > h1 {
+    color: white;
+    font-family: var(--fonte-pafrao);
+    font-size: 2.3em;
+    margin-bottom: 20PX;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.537);
+}
+
+header > p {
+    color: white;
+    font-size: 1.2em;
+    font-family: var(--fonte-pafrao);
+    max-width: 500px;
+    padding-right: 10px;
+    padding-right: 10px;
+    margin: auto;
+}
+
+nav {
+    background-color: var(--cor4);
+    padding: 10px;
+    box-shadow: 18px 7px 17px 2px rgba(0, 0, 0, 0.379);
+}
+
+nav > a {
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover {
+    background-color:var(--cor5);
+    color: var(--cor4);
+}
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.501);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main h3 {
+    color:var(--cor4);
+    font-size: 1.5em;
+    background-image: linear-gradient(to right, var(--cor5), transparent);
+}
+
+main h3 {
+    margin-top: 1em;
+}
+
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 2em;
+    font-size: 1em;
+}
+
+main strong {
+    color: var(--cor7);
+    font-weight: bold;
+    
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor4);
+    background-color: var(--cor5);
+    padding: 2px 6px;
+}
+
+main h1 {
+    color: var(--cor4);
+    text-align: auto;
+    background-image: linear-gradient(to right, var(--cor5), transparent);
+}
+
+div.video {
+    background-color: #2E4EF0;
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 57%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside {
+    background-color:#7db5f064;
+    border-radius: 10px;
+    margin-top: 15px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-right: 1em;
+    padding-left: 1em;
+    text-align: justify;
+    line-height: 1.5em;
+    list-style-type: '\2705\00A0';
+    list-style-position: inside;
+    columns: 1;
+}
+
+ul {
+    list-style-type: '\2705\00A0';
+}
+
+aside > h4, h2 {
+background-color: var(--cor6);
+color: white;
+padding: 8px;
+margin: -16px -16px 0px -16px;
+border-radius: 10px 10px 0px 0px;
+}
+
+main img {
+
+    width: 100%;
+
+}
+
+main img {
+    display: block;
+    margin: auto;
+
+}
+
+@media (max-width: 600px) {
+    .responsivo-img {
+        width: 100%; /* Reduz o tamanho da imagem */
+        /* height: auto; Mantém a proporção da imagem */
+        margin: auto;
+    }
+}
+
+article > h1 {
+    margin-bottom: 12px;
+}
+
+footer {
+    background-color: var(--cor4);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+footer a {
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor7);
+}
